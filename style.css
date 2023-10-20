@@ -46,6 +46,8 @@ button {
 }
 
 .flex-header .header-links {
+    font-size: medium;
+    align-items: center;
     display: flex;
     gap: 10px;
 }
@@ -54,17 +56,18 @@ button {
     display: flex;
     word-wrap: break-word;
     justify-content: space-between;
-
-    gap: 10%
+    gap: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .hero > div {
-    flex: 2;
+    flex: 1;
 }
 
-.hero img {
-    float: right;
-    flex: 1;
+.hero .hero-img {
+    height: 250px;
+    width: auto;
 }
 
 .flex-box {
@@ -73,6 +76,8 @@ button {
 
 .info {
     flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .info h2 {
@@ -98,8 +103,8 @@ button {
 .info .info-boxes div img {
     border: 2px solid #3882F6;
     border-radius: 20px;
-    height: 100px; 
-    width: 100px; 
+    height: 130px; 
+    width: 130px; 
     object-fit: cover;
 }
 
@@ -127,7 +132,7 @@ button {
 .quote-sect p {
     text-align: right;
     font-weight: bold;
-    margin: 5px 20px;
+    margin: 12px 20px;
 }
 
 .call-action {
