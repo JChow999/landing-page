@@ -1,0 +1,135 @@
+:root {
+    --dark-bg:#1F2937;
+    --main-text-color: #F9FAF8;
+    --blue-button: #3882F6; 
+    --quote-bg: #E5E7EB;
+}
+
+.flex-header, .hero {
+    background-color: var(--dark-bg);
+    color: var(--main-text-color);
+}
+
+body {
+    margin: 0;
+}
+
+body > * {
+    padding: 0 5%;
+}
+
+button {
+    border-radius: 9px;
+    border: none;
+    background-color: var(--blue-button);
+    color: white;
+    padding: 5px 25px
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-header div {
+    text-align: center;
+    display: flex;
+}
+
+.flex-header div h2 {
+    margin: 10px;
+}
+
+.hero {
+    display: flex;
+    word-wrap: break-word;
+    justify-content: space-between;
+    padding: 5% 5%;
+    gap: 10%
+}
+
+.hero > div {
+    flex: 2;
+}
+
+.hero img {
+    float: right;
+    flex: 1;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.info {
+    flex-direction: column;
+}
+
+.info h2 {
+    font: bolder 36px ;
+    margin: 40px;
+    /* font: 36px extra-bold #1F2937; */
+    text-align: center;
+}
+
+.info .info-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.info .info-boxes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+
+.info .info-boxes div img {
+    border: 2px solid #3882F6;
+    border-radius: 20px;
+    height: 100px; 
+    width: 100px; 
+    object-fit: cover;
+}
+
+.quote-sect {
+    display: flex;
+    padding: 10%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--quote-bg);
+    height: 400px;
+}
+
+.call-action {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-text-color);
+    background-color: var(--blue-button);
+    border-radius: 20px;
+    padding: 5%;
+    margin: 7% 12%;    
+}
+
+.call-action .cont-button {
+    display: flex;
+    align-items: center;
+}
+
+.call-action button {
+    border: 1px;
+    border-style: solid;
+    height: 35px;
+}
+
+footer {
+    background-color: var(--dark-bg);
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 70px;
+}
